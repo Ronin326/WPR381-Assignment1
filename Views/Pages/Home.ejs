@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/style.css"> </head>
+<body>
+    <%- include('../partials/header.ejs') %>  <main>
+        <section class="welcome-section">
+            <h1>Welcome to Our Community Portal</h1>
+            <p>This is the home page, designed to connect you with our community.</p>
+        </section>
+
+        <section class="books-of-the-month">
+            <h2>Books of the Month</h2>
+        </section>
+
+        <section class="monthly-events-calendar">
+            <h2>Monthly Events Calendar</h2>
+            <p>A calendar will be displayed here.</p>
+             <% if (events && events.length > 0) { %>
+                <ul>
+                    <% events.forEach(event => { %>
+                        <li>
+                            <h3><%= event.title %></h3>
+                            <p>Date: <%= event.date %></p>
+                            <p>Location: <%= event.location %></p>
+                            <% if (event.image) { %>
+                                <img src="<%= event.image %>" alt="<%= event.title %>" style="max-width: 200px;">
+                            <% } %>
+                        </li>
+                    <% }); %>
+                </ul>
+            <% } else { %>
+                <p>No upcoming events at the moment.  Please check back later!</p>
+            <% } %>
+            <a href="/events">View All Events</a>
+        </section>
+
+        <section class="featured-discussions">
+             <h2>Featured Discussions</h2>
+        </section>
+    </main>
+
+    <%- include('../partials/footer.ejs') %>  </body>
+</html>
