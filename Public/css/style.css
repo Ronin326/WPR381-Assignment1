@@ -38,6 +38,14 @@ header nav a {
     color: white;
     text-decoration: none;
 }
+.sticky {   /*atrebutes for navbar when scrolled*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #333;
+}
 
 /* Homepage Styles */
 main {
