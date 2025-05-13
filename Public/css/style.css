@@ -38,13 +38,24 @@ header nav a {
     color: white;
     text-decoration: none;
 }
-.sticky {   /*atrebutes for navbar when scrolled*/
+
+/*attributes for navbar when scrolled*/
+.sticky {   
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
     background-color: #333;
+}
+
+/* Apply background image to the entire page */
+body {
+    background-image: url('/Images/Background-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 /* Homepage Styles */
