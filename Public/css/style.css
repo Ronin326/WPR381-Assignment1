@@ -1,0 +1,77 @@
+/* Global Styles */
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+/* Header Styles */
+header {
+    grid-row: 1;
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    overflow: hidden;
+    top: 0;
+    z-index: 10;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Homepage Styles */
+main {
+    grid-row: 2;
+    padding-top: 60px; /* Adjust padding for sticky header */
+    padding-bottom: 20px;
+}
+
+.welcome-section {
+    padding: 2em;
+    text-align: center;
+}
+
+.books-of-the-month {
+    padding: 2em;
+}
+
+.monthly-events-calendar {
+    padding: 2em;
+}
+
+.featured-discussions {
+    padding: 2em;
+}
+
+/* Footer Styles */
+footer {
+    grid-row: 3;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
