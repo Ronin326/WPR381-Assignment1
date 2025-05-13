@@ -11,34 +11,63 @@ body {
     overflow-x: hidden; /* Prevent horizontal scrollbar */
 }
 
-/* Header Styles */
-header {
-    grid-row: 1;
+/* Header Layout */
+#HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
     background-color: #333;
     color: white;
-    padding: 1em 0;
-    text-align: center;
-    overflow: hidden;
-    top: 0;
-    z-index: 10;
 }
 
-header nav ul {
+/* Image Resizing */
+#HeaderImage img {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+    max-width: 100%;
+}
+
+/* Header Content */
+#HeaderHead {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Navbar */
+nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-header nav li {
-    display: inline;
-    margin: 0 1em;
-}
-
-header nav a {
+nav a {
     color: white;
     text-decoration: none;
 }
-.sticky {   /*atrebutes for navbar when scrolled*/
+
+/* Social Media Links */
+#HeaderLinks {
+    display: flex;
+    gap: 10px;
+}
+
+#HeaderLinks ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+#HeaderLinks a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sticky Navbar */
+.sticky {
     position: fixed;
     top: 0;
     left: 0;
