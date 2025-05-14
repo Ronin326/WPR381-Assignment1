@@ -329,3 +329,60 @@ hr{
     border: solid #57430c;
     border-radius: 2em;
 }
+
+/* About Page Layout */
+.about {
+    padding: 40px 20px;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #5b3e3a;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.story, .team, .values {
+    background-color: #fff0e1; /* Light background for each section */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.values p {
+    line-height: 1.6;
+}
