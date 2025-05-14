@@ -1,0 +1,54 @@
+{
+    "Events": [
+        {            
+            "EventType": "New Release",
+            "Date": "2025-03-01",
+            "Author": "Suzanne Collins"
+        },
+        {
+            "EventType": "Premier",
+            "Date": "2025-05-20",
+            "Author": "Rebecca Yarros"
+        },
+        {
+            "EventType": "Book Signing",
+            "Date": "2025-05-13",
+            "Author": "Ling Ma"
+        },
+        {
+            "EventType": "Book Reading",
+            "Date": "2025-01-18",
+            "Author": "Kaliane Bradley"
+        },
+        {
+            "EventType": "Book Signing",
+            "Date": "2025-03-25",
+            "Author": "Helen Phillips"
+        },
+        {
+            "EventType": "Book Reading",
+            "Date": "2025-07-05",
+            "Author": "Freida McFadden"
+        },
+        {
+            "EventType": "Premier",
+            "Date": "2025-10-17",
+            "Author": "Nathan Harris"
+        },
+        {
+            "EventType": "New Release",
+            "Date": "2025-11-15",
+            "Author": "TJ Klune"
+        },
+        {
+            "EventType": "Book Signing",
+            "Date": "2025-12-01",
+            "Author": "Clare Leslie Hall"
+        },
+        {
+            "EventType": "Book Signing",
+            "Date": "2025-02-14",
+            "Author": "Clare Leslie Hall"
+        }
+    ]
+}
