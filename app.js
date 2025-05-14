@@ -4,7 +4,7 @@ const app = express();
 
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'Views')); // Serve static assets (CSS, images)
+app.set('views', path.join(__dirname, 'views')); // Lowercase "views"
 app.use(express.static(path.join(__dirname, 'public')));
 // Parse the request body for POST requests
 app.use(express.urlencoded({ extended: false })); // Define a simple data store for the contact form (in-memory array)
