@@ -339,3 +339,12 @@ footer p {
 .Contact-Form button:hover {
     background: #555;
 }
+
+/*  Events Page Styles  */
+.EventDiv{    
+    padding-top: 1em;
+    width: 18%;
+    text-align: center;
+    border: solid #57430c;
+    border-radius: 2em;
+}
