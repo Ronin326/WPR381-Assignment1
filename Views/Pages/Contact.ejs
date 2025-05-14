@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
     <script src="/Scripts/script.js"></script>
-<body>
+<body class="Contact-Body">
 
     <%- include('../partials/header.ejs') %>
 
-    <!-- Contact Form -->
-    <section class="contact-form">
+<main class="Contact-Main">
+<!--    Contact Form    -->
+    <section class="Contact-Form">
     <form id="contactForm">
+        <h1>Contact Us</h1>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -26,9 +28,32 @@
         <button type="submit">Send Message</button>
     </form>
 </section>
+<!--    Add events      -->
+    <section class="Contact-Form">
+    <form id="EventForm">
+        <h1>Book an Event</h1>
+        <label for="EventType">Event Type:</label>
+        <select name="EventType" id="EventType">
+            <option value="Premier">Premier</option>
+            <option value="New Release">New Release</option>
+            <option value="Book Signing">Book Signing</option>
+            <option value="Book Reading">Book Reading</option>
+        </select>
 
+        <label for="HostEmail">Host Email:</label>
+        <input type="email" id="HostEmail" name="HostEmail" required>
+
+        <label for="Details">Event Details:</label>
+        <textarea id="Details" name="Details" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+</main>
 
     <%- include('../partials/footer.ejs') %>
+
+    <script src="/Scripts/ContactScript.js"></script>
 
 </body>
 </html>

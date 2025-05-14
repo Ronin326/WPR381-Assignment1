@@ -126,38 +126,56 @@ footer p {
     margin: 0.5em 0;
 }
 
-/* Contact Form */
-.contact-form {
-    max-width: 600px;
+/*Contact Us Page Styling*/
+.Contact-Body {
+    background-image: url('/Images/Backgrounds/ContactUsBG.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.Contact-Main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1%;
+}
+    /*Contact Form*/
+.Contact-Form {
+    width: 60%;
     margin: 50px auto;
-    padding: 20px;
-    background: #f4f4f4;
+    background: rgba(244, 244, 244, 0.6);
     border-radius: 5px;
 }
 
-.contact-form label {
+.Contact-Form label {
     display: block;
     margin-top: 10px;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 10px;
+.Contact-Form input,
+.Contact-Form textarea {
+    width: 90%;
+    padding: 1%;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-.contact-form button {
+.Contact-Form select{
+    width: 90%;
+    height: 2%;
+}
+
+.Contact-Form button {
     margin-top: 15px;
     padding: 10px 20px;
     background: #333;
     color: white;
     border: none;
     cursor: pointer;
+    left: 50%;
 }
 
-.contact-form button:hover {
+.Contact-Form button:hover {
     background: #555;
 }
