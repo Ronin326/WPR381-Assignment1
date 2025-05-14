@@ -15,7 +15,7 @@ function AddEvent(Events) {
 
     //Create the event type element
         const EventT = document.createElement("p");
-        EventT.textContent = Event.EventType;
+        EventT.textContent = "Event Type: "+ Event.EventType;
         EventT.className = "EventType";
     
     //Create the event author element
@@ -26,7 +26,7 @@ function AddEvent(Events) {
     //Create the event date element
         const EventDate = document.createElement("p");
         let EDate = new Date(Event.Date);
-        EventDate.textContent = EDate.toDateString();
+        EventDate.textContent = "Date: " + EDate.toDateString();
         EventDate.className = "EventDate";
     
     //Append elements to EventDiv

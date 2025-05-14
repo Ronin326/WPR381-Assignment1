@@ -213,10 +213,9 @@ hr{
 .monthly-events-calendar {
     margin-top: 2em;
     margin-bottom: 2em;
-    padding: 2em;
     background-color: rgba(61, 45, 0, 0.5);
     border-radius: 2em;
-    width: 86.5%;
+    width: 90%;
     margin-left: 4.5%;
     display: flex;
     flex-direction: column;
@@ -267,6 +266,110 @@ hr{
     background-color: rgba(61, 45, 0, 0.7);
 }
 
+/*  Events Page Styles  */
+.EventDiv{    
+    padding-top: 1em;
+    width: 18%;
+    text-align: center;
+    border: solid #57430c;
+    border-radius: 2em;
+}
+
+/* About Page Layout */
+.about {
+    padding: 2em 1em; 
+    background-color: rgba(73, 62, 29, 0.4);
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.about-header h1 {
+    font-size: 4rem; 
+    margin-bottom: 0.5em;
+    color: #ffe292;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #ffe292;
+    font-size: 2rem; 
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.story, .team, .values {
+    background-color: rgba(88, 70, 23, 0.7);
+    padding: 1.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.3em 0.6em rgba(0, 0, 0, 0.1);
+}
+.story h2, .team h2, .values h2 {
+    color: #3f6e98;
+    font-size: 2rem;
+}
+.story p, .team p, .values p {
+    color: #ffe292;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5em;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+.team-member p{
+    font-size: 1.5rem;
+}
+
+.team-member img {
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.8em;
+}
+
+/*Events Page Style*/
+.EventSchedule{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    background-color: rgba(27, 27, 27, 0.4);
+}
+.EventSchedule .EventDiv {
+    width: 45%;
+    background-color: rgba(11, 11, 11, 0.5);
+    border: solid 0.15em #ffe292;
+    padding: 1em;
+}
+.EventSchedule .EventDiv .EventType , .EventSchedule .EventDiv .EventDate {
+    color: #ffe292;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 10%;
+}
+.EventSchedule .EventDiv .EventAuthor {
+    color: #3f6e98;
+    font-size: 2.5rem;
+}
+
 /*Contact Us Page Styling*/
 .Contact-Body {
     background-image: url('/Images/Backgrounds/ContactUsBG.png');
@@ -279,110 +382,52 @@ hr{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 1%;
+    background-color: rgba(27, 27, 27, 0.4);
 }
     /*Contact Form*/
 .Contact-Form {
     width: 60%;
     margin: 50px auto;
     background: rgba(244, 244, 244, 0.6);
-    border-radius: 5px;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+.Contact-Form h1{
+    font-size: 3rem;
+    color: #7A1F2D;
 }
 
 .Contact-Form label {
     display: block;
-    margin-top: 10px;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #B27D8F;
 }
 
 .Contact-Form input,
-.Contact-Form textarea {
+.Contact-Form textarea, .Contact-Form select{
     width: 90%;
+    font-size: 1.5rem;
     padding: 1%;
     margin-top: 5px;
-    border: 1px solid #ccc;
+    border: 2px solid #7A1F2D;
     border-radius: 5px;
 }
 
-.Contact-Form select{
-    width: 90%;
-    height: 2%;
-}
-
 .Contact-Form button {
-    margin-top: 15px;
-    padding: 10px 20px;
-    background: #333;
-    color: white;
-    border: none;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    background: #B27D8F;
+    color: #7A1F2D;
+    border: 2px solid #7A1F2D;
+    border-radius: 1.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     left: 50%;
 }
 
 .Contact-Form button:hover {
-    background: #555;
-}
-
-/*  Events Page Styles  */
-.EventDiv{    
-    padding-top: 1em;
-    width: 18%;
-    text-align: center;
-    border: solid #57430c;
-    border-radius: 2em;
-}
-
-/* About Page Layout */
-.about {
-    padding: 40px 20px;
-}
-
-.about-header {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.about-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.about-header p {
-    font-size: 1.2em;
-    color: #5b3e3a;
-}
-
-.about-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    margin-top: 40px;
-}
-
-.story, .team, .values {
-    background-color: #fff0e1; /* Light background for each section */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.team-members {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.team-member {
-    text-align: center;
-    width: 30%;
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-}
-
-.values p {
-    line-height: 1.6;
+    background: #7A1F2D;
+    color: #B27D8F;
+    border: 2px solid #B27D8F;
 }
