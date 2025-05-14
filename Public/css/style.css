@@ -11,6 +11,16 @@ body {
     overflow-x: hidden;
 }
 
+/* Apply background image to the entire page */
+body {
+    height: auto;
+    background-image: url('/Images/Backgrounds/LibraryOffice.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
 /* Header Layout */
 #HeaderContainer {
     display: flex;
@@ -19,15 +29,13 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
 }
-
-/* Individual sections */
+    /* Individual sections */
 .WebLogo, .HeaderContent, .HeaderLinks {
     flex: 1;
     display: flex;
     align-items: center;
 }
-
-/* Center content */
+    /* Center content */
 .HeaderContent {
     display: table-column;
     justify-content: center;
@@ -65,8 +73,7 @@ body {
     color: inherit;
     text-decoration: none;
 }
-
-/* Logo */
+    /* Logo */
 .WebLogo img {
     width: 20%;
     max-width: 100%;
@@ -75,35 +82,34 @@ body {
     border-radius: 100%;
     background-color: #ffe292;
 }
-
-/* Social Links */
-.HeaderLinks {
-    justify-content: flex-start;
-}
-
-.HeaderLinks a {
-    text-decoration: none;
-}
-
-/* Sticky Navbar */
+    /* Sticky Navbar */
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 34%;
     z-index: 1000;
-    background-color: #1b1b1b;
-    gap: 3%;
+    padding-left: 33%;
+    padding-right: 33%;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Apply background image to the entire page */
-body {
-    height: auto;
-    background-image: url('/Images/Backgrounds/LibraryOffice.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+/* Footer Styles */
+footer {
+    grid-row: 3;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+    font-size: x-large;
+    color: #725400;
+}
+footer p a{
+    color: inherit;
+    text-decoration: none;
 }
 
 /* Homepage Styles */
@@ -111,8 +117,7 @@ body {
     grid-row: 2;
     background-color: rgba(190, 168, 106, 0.4);
 }
-
-/* Welcom Section Styles */
+    /* Welcom Section Styles */
 .welcome-section {
     padding: 2em;
     text-align: center;
@@ -131,11 +136,10 @@ body {
 hr{
     border: none;
     height: 3px;
-    background-color: #3D2D00; /* A nice blue color */
+    background-color: #3D2D00;
     width: 80%;
 }
-
-/* Books of the month Section Styles */
+    /* Books of the month Section Styles */
 .books-of-the-month {
   padding: 0.5em;
   background-color: rgba(61, 45, 0, 0.5);
@@ -205,8 +209,7 @@ hr{
     width: 9em;
     height: auto;
 }
-
-/* Calendar Section Styles */
+    /* Calendar Section Styles */
 .monthly-events-calendar {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -217,16 +220,14 @@ hr{
     margin-left: 4.5%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center the content */
+    align-items: center;
 }
-
 .monthly-events-calendar h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffe292;
     font-size: x-large;
     text-align: center;
 }
-
 #calendar {
     display: flex;
     flex-direction: column;
@@ -234,13 +235,11 @@ hr{
     width: 100%;
     padding: 1em;
 }
-
 #calendar table {
     width: 80%;
     border-collapse: collapse;
     background-color: rgba(190, 168, 106, 0.4);
 }
-
 #calendar th, #calendar td {
     text-align: center;
     padding: 2em;
@@ -248,16 +247,13 @@ hr{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ffe292;
 }
-
 #calendar th {
     background-color: rgba(61, 45, 0, 0.7);
     font-weight: bold;
 }
-
 #calendar td {
     background-color: rgba(61, 45, 0, 0.4);
 }
-
 #calendar a {
     display: inline-block;
     margin-top: 1em;
@@ -267,23 +263,8 @@ hr{
     border-radius: 1em;
     background-color: rgba(61, 45, 0, 0.5);
 }
-
 #calendar a:hover {
     background-color: rgba(61, 45, 0, 0.7);
-}
-
-
-/* Footer Styles */
-footer {
-    grid-row: 3;
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-footer p {
-    margin: 0.5em 0;
 }
 
 /*Contact Us Page Styling*/
