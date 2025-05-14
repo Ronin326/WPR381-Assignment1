@@ -12,59 +12,7 @@ body {
 }
 
 /* Header Layout */
-#HeaderContainer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1em;
-    background-color: #333;
-    color: white;
-}
 
-/* Image Resizing */
-#HeaderImage img {
-    width: 80px; /* Adjust as needed */
-    height: auto;
-    max-width: 100%;
-}
-
-/* Header Content */
-#HeaderHead {
-    flex-grow: 1;
-    text-align: center;
-}
-
-/* Navbar */
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-}
-
-/* Social Media Links */
-#HeaderLinks {
-    display: flex;
-    gap: 10px;
-}
-
-#HeaderLinks ul {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-}
-
-#HeaderLinks a {
-    color: white;
-    text-decoration: none;
-}
 
 /* Sticky Navbar */
 .sticky {
@@ -73,7 +21,8 @@ nav a {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #333;
+    background-color: #1b1b1b;
+    gap: 3%;
 }
 
 /* Apply background image to the entire page */
@@ -173,7 +122,7 @@ hr{
     text-align: center;
     font-size: 1em;
     color: #ffe292;
-    margin-left: 1em;
+    margin-left: 18%;
 }
 .books-of-the-month .BooksDisplay .BookDiv .BookAuthor {
     text-align: center;
