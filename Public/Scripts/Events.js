@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
     fetch("/Scripts/Events.json")
         .then(response => response.json())
-        .then(data => AddEvent(data.fields))
+        .then(data => AddEvent(data.Events))
        // .catch(error => console.error("Error loading JSON:", error));
 });
 
 function AddEvent(Events) {
-    const EventForm = document.getElementById("EventSchedule")[0];
+    const EventForm = document.getElementById("EventSchedule");
     EventForm.innerHTML = "";
     Events.forEach(Event => {
     //Create a div for the event
