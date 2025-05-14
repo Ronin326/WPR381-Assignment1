@@ -8,11 +8,61 @@ body {
     font-family: sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    overflow-x: hidden;
 }
 
 /* Header Layout */
+#HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 
+/* Individual sections */
+.WebLogo, .HeaderContent, .HeaderLinks {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+/* Center content */
+.HeaderContent {
+    display: table-column;
+    justify-content: center;
+    text-align: center;
+}
+.HeaderContent .navbar{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Logo */
+.WebLogo img {
+    width: 20%;
+    max-width: 100%;
+    height: auto;
+    margin: 5%;
+    border-radius: 100%;
+    background-color: #ffe292;
+}
+
+/* Social Links */
+.HeaderLinks {
+    justify-content: flex-start;
+}
+
+.HeaderLinks ul {
+    list-style: none;
+    display: table-row;
+    gap: 1em;
+}
+
+.HeaderLinks a {
+    text-decoration: none;
+}
 
 /* Sticky Navbar */
 .sticky {
