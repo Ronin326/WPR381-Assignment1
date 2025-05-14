@@ -78,6 +78,7 @@ nav a {
 
 /* Apply background image to the entire page */
 body {
+    height: auto;
     background-image: url('/Images/Backgrounds/LibraryOffice.png');
     background-size: cover;
     background-position: center;
@@ -86,32 +87,171 @@ body {
 }
 
 /* Homepage Styles */
-main {
+#HomepageMain {
     grid-row: 2;
-    padding-top: 60px; /* Adjust padding for sticky header */
-    padding-bottom: 20px;
+    background-color: rgba(190, 168, 106, 0.4);
 }
 
+/* Welcom Section Styles */
 .welcome-section {
     padding: 2em;
     text-align: center;
 }
+.welcome-section h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: #3D2D00;
+    font-weight: 1000;
+}
+.welcome-section p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #3D2D00;
+    font-size: x-large;
+}
+hr{
+    border: none;
+    height: 3px;
+    background-color: #3D2D00; /* A nice blue color */
+    width: 80%;
+}
 
+/* Books of the month Section Styles */
 .books-of-the-month {
-    padding: 0.5em;
-    background-color: #6a6a6a;
+  padding: 0.5em;
+  background-color: rgba(61, 45, 0, 0.5);
+  border-radius: 2em;
+  width: 90%;
+  margin-left: 4.5%;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 1%;
+}
+.books-of-the-month h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffe292;
+  font-size: x-large;
+  width: 12em;
+  margin: 0;
+}
+.books-of-the-month select {
+  color: #ffe292;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  padding: 0.2em 0.5em;
+  width: 7em;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.books-of-the-month option{
+    color: #ffe292;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(61, 45, 0, 0.5);
+}
+    /* Books of the month Section BookDiv Styles */
+.books-of-the-month .BooksDisplay {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.books-of-the-month .BooksDisplay .BookDiv {
+    padding-top: 1em;
+    width: 18%;
+    text-align: center;
+    border: solid #57430c;
     border-radius: 2em;
-    width: 90%;
-    margin-left: 3%;
+}
+.books-of-the-month .BooksDisplay .BookDiv .BookTitle {
+    text-align: center;
+    font-size: 1em;
+    color: #ffe292;
+    margin-left: 1em;
+}
+.books-of-the-month .BooksDisplay .BookDiv .BookAuthor {
+    text-align: center;
+    font-size: 0.9em;
+    color: #ffe292;
+    margin-top: 0.2em;
+}
+.books-of-the-month .BooksDisplay .BookDiv .BookImage {
+    width: 9em;
+    height: auto;
 }
 
+/* Calendar Section Styles */
 .monthly-events-calendar {
+    margin-top: 2em;
+    margin-bottom: 2em;
     padding: 2em;
+    background-color: rgba(61, 45, 0, 0.5);
+    border-radius: 2em;
+    width: 86.5%;
+    margin-left: 4.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
 }
 
-.featured-discussions {
-    padding: 2em;
+.monthly-events-calendar h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffe292;
+    font-size: x-large;
+    text-align: center;
 }
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1em;
+}
+
+#calendar table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: rgba(190, 168, 106, 0.4);
+}
+
+#calendar th, #calendar td {
+    text-align: center;
+    padding: 2em;
+    border: 1px solid #ffe292;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ffe292;
+}
+
+#calendar th {
+    background-color: rgba(61, 45, 0, 0.7);
+    font-weight: bold;
+}
+
+#calendar td {
+    background-color: rgba(61, 45, 0, 0.4);
+}
+
+#calendar a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: #ffe292;
+    text-decoration: none;
+    border-radius: 1em;
+    background-color: rgba(61, 45, 0, 0.5);
+}
+
+#calendar a:hover {
+    background-color: rgba(61, 45, 0, 0.7);
+}
+
 
 /* Footer Styles */
 footer {

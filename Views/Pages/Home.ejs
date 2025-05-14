@@ -6,53 +6,71 @@
     <title>Your Page Title</title>
     <link rel="stylesheet" href="/css/style.css"> </head>
     <script src="/Scripts/script.js"></script>
+    <script src="/Scripts/BooksOfTheMonth.js"></script>
 <body>
     <%- include('../partials/header.ejs') %>
-    <main>
+    <main id="HomepageMain">
         <section class="welcome-section">
             <h1>Welcome to Our Community Portal</h1>
             <p>This is the home page, designed to connect you with our community.</p>
         </section>
-
         <section class="books-of-the-month">
+            <section class="header-container">
             <h2>Books of the Month</h2>
             <select name="GenreSelect" id="GenreSelect">
                 <option value="Sci-Fi">Sci-Fi</option>
                 <option value="Romance">Romance</option>
                 <option value="Action">Action</option>
                 <option value="Fiction">Fiction</option>
-                <option value="Non-Fiction">Non-Fiction</option>
-            </select>
-            <div id="Book Displays">
-                
-            </div>
+            </select></section>
+            <section class="BooksDisplay">
+            </section>
         </section>
 
         <section class="monthly-events-calendar">
-            <h2>Monthly Events Calendar</h2>
-            <p>A calendar will be displayed here.</p>
-             <% if (events && events.length > 0) { %>
-                <ul>
-                    <% events.forEach(event => { %>
-                        <li>
-                            <h3><%= event.title %></h3>
-                            <p>Date: <%= event.date %></p>
-                            <p>Location: <%= event.location %></p>
-                            <% if (event.image) { %>
-                                <img src="<%= event.image %>" alt="<%= event.title %>" style="max-width: 200px;">
-                            <% } %>
-                        </li>
-                    <% }); %>
-                </ul>
-            <% } else { %>
-                <p>No upcoming events at the moment.  Please check back later!</p>
-            <% } %>
-            <a href="/events">View All Events</a>
+            <h2>Monthly Events Calendar - May 2025</h2>
+            <div id="calendar"></div> <!-- Calendar will be displayed here -->
         </section>
 
-        <section class="featured-discussions">
-             <h2>Featured Discussions</h2>
-        </section>
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            generateCalendar(5, 2025); // May 2025 (Month index starts at 0, so 5 = June)
+        });
+
+        function generateCalendar(month, year) {
+            const calendarContainer = document.getElementById("calendar");
+            calendarContainer.innerHTML = ""; // Clear any existing content
+
+            const daysInMonth = new Date(year, month, 0).getDate(); // Get number of days in month
+            const firstDayIndex = new Date(year, month - 1, 1).getDay(); // Get the first day of the month
+
+            let calendarHTML = `<table border="1">
+                <thead>
+                    <tr>
+                        <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody><tr>`;
+
+            // Fill empty cells for days before May starts
+            for (let i = 0; i < firstDayIndex; i++) {
+                calendarHTML += `<td></td>`;
+            }
+
+            // Populate the calendar with days
+            for (let day = 1; day <= daysInMonth; day++) {
+                if ((firstDayIndex + day - 1) % 7 === 0) { // Start a new row on Sundays
+                    calendarHTML += `</tr><tr>`;
+                }
+                calendarHTML += `<td>${day}</td>`;
+            }
+
+            // Close the row and table
+            calendarHTML += `</tr></tbody></table>`;
+            
+            calendarContainer.innerHTML = calendarHTML;
+        }
+        </script>
     </main>
 
     <%- include('../partials/footer.ejs') %>  </body>
