@@ -78,7 +78,7 @@ nav a {
 
 /* Apply background image to the entire page */
 body {
-    background-image: url('/Images/Background-1.png');
+    background-image: url('/Images/Backgrounds/LibraryOffice.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -98,7 +98,11 @@ main {
 }
 
 .books-of-the-month {
-    padding: 2em;
+    padding: 0.5em;
+    background-color: #6a6a6a;
+    border-radius: 2em;
+    width: 90%;
+    margin-left: 3%;
 }
 
 .monthly-events-calendar {
